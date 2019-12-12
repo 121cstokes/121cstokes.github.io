@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <title>All About Me</title>
+		<link rel="stylesheet" href"https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="tipcalc.js">
+    <style>
+			#maroon	{
+				background-color: #1a0000;
+				color: white;
+				height: 35px;
+			}
+      .container  { background-color: white;
+				width: 20%;
+				border-radius: 8px;
+				height: 410px;
+			}
+			.button	{background-color: #990033;
+							 color: white;
+							 border-radius: 8px;
+							 width: 55%;
+							 height: 50px;
+						 }
+			.stuff	{
+					background-color: #660000;
+			}
+			.calc	{
+				background-color: #990033;
+				width: 0%;
+			}
+    </style>
+  </head>
+  <body class="stuff">
+		<center>
+			<div class="container">
+				<div id="maroon">
+					<h3>TIP CALCULATOR</h3>
+				</div>
+      	<h4>How much was your bill?</h4>
+      	<form action="">
+        	$ <input type="text" id="billAmount" placeholder="Bill Amount"><br>
+      	</form>
+      	<h4>How was your service?</h4>
+      	<select id="serviceQual">
+        	<option>--Choose an Option--</option>
+					<option value=".1">Absolutely Terrible</option>
+        	<option value=".15">Sufficient</option>
+        	<option value=".2">Great</option>
+        	<option value=".3">Wonderful</option>
+      	</select>
+      	<h4>How many people are sharing the bill?</h4>
+      	<form action="">
+        	<input type="text" id="numberOfPeople" placeholder="Number of People"> people<br>
+				</form>
+				<br>
+				<form>
+      			<input class="button" type="submit" value="CALCULATE!" id="calc">
+      	</form>
+				<div id="totalTip">
+					<sup>$</sup><span id="tip">0.00</span>
+					<small id="each">each</small>
+				</div>
+    	</div>
+		</center>
+		<script><link rel="stylesheet" src="tipcalc.js"></script>
+  </body>
